@@ -39,6 +39,11 @@ class LoanApplication(BaseModel):
 
 
 
+@app.get("/health")
+def health():
+    return {"status": "ok"}
+
+
 @app.post("/predict")
 def predict(data:LoanApplication):
     input_df=pd.DataFrame([data.dict()])
