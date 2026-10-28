@@ -1,0 +1,8 @@
+fastapi==0.115.0
+uvicorn[standard]==0.30.6
+pydantic>=2.7,<3
+pandas
+joblib
+numpy
+scikit-learn  # pin to the EXACT version you trained with, e.g. scikit-learn==1.5.2
+# add xgboost / lightgbm / category_encoders here if your pipeline uses them
